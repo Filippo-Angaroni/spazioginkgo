@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+    <style>
+        /* Reset di base per eliminare i margini predefiniti */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Stili dell'Header */
+        .main-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 40px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+
+        /* Contenitore del Logo / Immagine */
+        .header-logo img {
+            height: 50px; /* Regola l'altezza in base alle tue esigenze */
+            width: auto;
+            display: block;
+        }
+
+        /* Navigazione */
+        .header-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px; /* Spazio tra le voci di menu */
+        }
+
+        .header-nav a {
+            text-decoration: none;
+            color: #333333;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        /* Effetto Hover sui Link */
+        .header-nav a:hover {
+            color: #0076ff; /* Colore che richiama un accento moderno */
+        }
+
+        /* Spacer per evitare che il contenuto del body finisca sotto l'header fixed */
+        .content-spacer {
+            margin-top: 90px; 
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="header-logo">
+            <img src="./imgs/Logo.svg" alt="Logo">
+        </div>
+
+        <nav class="header-nav">
+            <ul>
+                <li><a href="#chi-siamo">Chi siamo</a></li>
+                <li><a href="#lo-spazio">Lo spazio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content-spacer"></div>
+
+</body>
+</html>
