@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/root.css">
+    <link rel="stylesheet" href="./css/index.css">
     <script>
         fetch('header.html')
             .then(response => response.text())
@@ -13,10 +16,23 @@
             .catch(error => console.error('Errore nel caricamento dell\'header:', error));
     </script>
 </head>
+<div id="header-placeholder"></div>
+
 <body>
 
-    <div id="header-placeholder"></div>
 
-    <h1>ciao</h1>
+    <div class="main-image-container">
+        <div class="main-image">
+            <h1 class="lora-normal">Spazio Ginkgo</h1>
+            <button class="montserrat-semi-bold">Scopri i nostri servizi</button>
+        </div>  
+    </div>
+
+    <div class="experiences-container">
+
+    </div>
+
+
 </body>
+
 </html>

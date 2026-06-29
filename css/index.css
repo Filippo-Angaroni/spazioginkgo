@@ -1,0 +1,46 @@
+.main-image-container {
+    display: flex;
+    align-items: cent   er;
+    justify-content: center;
+}
+
+.main-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 2em - 50px);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../imgs/specchio.jpg') no-repeat center center;
+    color: var(--white);
+}
+
+.main-image h1 {
+    font-size: 7em;
+    margin-bottom: .25em;
+}
+
+.main-image button {
+    background-color: var(--color-accent-light);
+    color: var(--color-accent-dark);
+    padding: 0.5em 1.5em;
+    border: none;
+    border-radius: 1em;
+    font-size: 1.2em; 
+    cursor: pointer;
+}
+
+.main-image button:hover {
+    font-size: 1.3em;
+}
+
+
+
+.experiences-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    background-color: var(--white);     
+}
